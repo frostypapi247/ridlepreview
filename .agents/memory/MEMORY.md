@@ -1,0 +1,1 @@
+- [Vercel builds from this pnpm workspace](vercel-pnpm-workspace.md) — Verify npm installs in a clean Vercel-style copy, not over the pnpm-managed workspace dependencies.

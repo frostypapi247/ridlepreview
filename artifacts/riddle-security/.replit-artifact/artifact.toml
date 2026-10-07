@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Riddle Security"
+description = "A premium corporate website for Riddle Security (Private) Limited, a Zimbabwean security company. Explore its security services, company profile, industries served, operational approach, and request a security assessment."
+version = "1.0.0"
+id = "artifacts/riddle-security"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24244
+
+[services.development]
+run = "pnpm --filter @workspace/riddle-security run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/riddle-security", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/riddle-security/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24244"
+BASE_PATH = "/"
