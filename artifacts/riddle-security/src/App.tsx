@@ -148,7 +148,7 @@ function Home() {
       <div className="hero-grid"/>
       <div className="hero-content"><div className="hero-copy">
         <div className="eyebrow">RIDDLE SECURITY · PRIVATE LIMITED</div>
-        <h1>SECURITY YOU CAN TRUST.<br/><span>PROTECTION YOU CAN RELY ON.</span></h1>
+        <h1>WE VALUE YOUR<br/><span>SECURITY NEEDS</span></h1>
         <p>Riddle Security (Private) Limited provides professional security, safeguarding and protection solutions designed to give individuals, businesses and organisations peace of mind.</p>
         <div className="hero-actions"><Link href="/request-assessment" className="button button-primary" data-testid="link-hero-assessment">REQUEST A SECURITY ASSESSMENT <ArrowRight size={15}/></Link><Link href="/services" className="button button-outline" data-testid="link-hero-services">EXPLORE OUR SERVICES</Link></div>
         <div className="hero-kicker">WE VALUE YOUR SECURITY NEEDS</div>

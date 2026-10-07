@@ -94,8 +94,8 @@
 .nav-cta { min-height:43px; padding-inline:16px; font-size:10px; }
 .mobile-toggle { display:none; border:0; color:var(--navy); background:transparent; padding:8px; cursor:pointer; }
 .hero { min-height:620px; position:relative; display:flex; align-items:center; overflow:hidden; background:var(--navy); color:white; }
-.hero-photo { position:absolute; inset:0 0 0 auto; width:60%; height:100%; object-fit:cover; object-position:center 43%; }
-.hero:before { content:""; position:absolute; z-index:1; inset:0; background:linear-gradient(90deg,#071B5C 0%,#071B5C 38%,rgba(7,27,92,.9) 52%,rgba(7,27,92,.35) 100%); }
+.hero-photo { position:absolute; inset:0 0 0 auto; width:60%; height:100%; object-fit:cover; object-position:center 43%; filter:brightness(1.04) contrast(1.08); }
+.hero:before { content:""; position:absolute; z-index:1; inset:0; background:linear-gradient(90deg,#071B5C 0%,#071B5C 30%,rgba(7,27,92,.82) 40%,rgba(7,27,92,.35) 52%,rgba(7,27,92,.1) 72%,rgba(7,27,92,.1) 100%); }
 .hero:after { content:""; position:absolute; z-index:1; inset:0; background:linear-gradient(0deg,rgba(5,18,61,.5),transparent 34%); }
 .hero-grid { position:absolute; z-index:1; right:0; top:0; width:55%; height:100%; opacity:.12; background-image:linear-gradient(rgba(255,255,255,.35) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.35) 1px,transparent 1px); background-size:68px 68px; mask-image:linear-gradient(90deg,transparent,black); }
 .hero-content { position:relative; z-index:2; width:min(1200px,calc(100% - 48px)); margin:0 auto; padding:90px 0 104px; }
