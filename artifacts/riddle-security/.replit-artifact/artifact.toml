@@ -12,17 +12,7 @@ paths = [ "/" ]
 localPort = 24244
 
 [services.development]
-run = "pnpm --filter @workspace/riddle-security run dev"
-
-[services.production]
-build = [ "pnpm", "--filter", "@workspace/riddle-security", "run", "build" ]
-serve = "static"
-publicDir = "artifacts/riddle-security/dist/public"
-
-[[services.production.rewrites]]
-from = "/*"
-to = "/index.html"
+run = "pnpm --filter riddle-security-website run dev"
 
 [services.env]
 PORT = "24244"
-BASE_PATH = "/"
